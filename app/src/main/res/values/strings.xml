@@ -43,12 +43,12 @@
     <string name="token_null">Token: null</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
-    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="desc_letsChat">LetsChat logo</string>
     <string name="auth_failed">Authentication failed</string>
-    <string name="start_phone_auth">Start</string>
+    <string name="start_phone_auth">Send OTP</string>
     <string name="verify_phone_auth">Verify</string>
-    <string name="resend_phone_auth">Resend</string>
-    <string name="hint_phone_number">Phone Number</string>
+    <string name="resend_phone_auth">Resend OTP</string>
+    <string name="hint_phone_number">Ex:+91 9483904242</string>
     <string name="hint_verification_code">Verification Code</string>
     <string name="status_code_sent">Code Sent</string>
     <string name="status_verification_failed">Verification failed</string>
@@ -74,7 +74,7 @@
     <string name="status_email_sent">Link sent, check your email to continue.</string>
     <string name="status_link_found">Link received, enter email to sign in.</string>
 
-    <string name="phone_title_text">Phone Number</string>
+    <string name="phone_title_text">Sign In to Chat!</string>
 
     <string name="twitter_status_fmt">Twitter User: %s</string>
     <string name="twitter_title_text">Twitter Login</string>
@@ -84,4 +84,6 @@
 
     <string name="id_fmt">User ID: %s</string>
     <string name="email_fmt">Email: %s</string>
+    <string name="launcher_icon">Launcher Icon</string>
+    <string name="log_out">Log Out</string>
 </resources>

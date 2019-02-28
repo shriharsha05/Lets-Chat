@@ -6,25 +6,24 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/letschat"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/letschat"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
+        <activity android:name=".MainActivity"></activity>
+        <activity
+            android:name=".PhoneAuthActivity"
+            android:label="@string/label_phone_auth"
+            android:windowSoftInputMode="adjustPan">
         </activity>
-
-        <activity android:name=".PhoneAuthActivity"
-                  android:label="@string/label_phone_auth"
-                  android:windowSoftInputMode="adjustPan" >
+        <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

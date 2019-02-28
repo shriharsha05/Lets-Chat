@@ -1,5 +1,6 @@
 package freak.i.letschat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -60,7 +61,7 @@ public class PhoneAuthActivity extends AppCompatActivity implements
     private Button mStartButton;
     private Button mVerifyButton;
     private Button mResendButton;
-    private Button mSignOutButton;
+   // private Button mSignOutButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,13 +86,13 @@ public class PhoneAuthActivity extends AppCompatActivity implements
         mStartButton = findViewById(R.id.button_start_verification);
         mVerifyButton = findViewById(R.id.button_verify_phone);
         mResendButton = findViewById(R.id.button_resend);
-        mSignOutButton = findViewById(R.id.sign_out_button);
+      //  mSignOutButton = findViewById(R.id.sign_out_button);
 
         // Assign click listeners
         mStartButton.setOnClickListener(this);
         mVerifyButton.setOnClickListener(this);
         mResendButton.setOnClickListener(this);
-        mSignOutButton.setOnClickListener(this);
+      //  mSignOutButton.setOnClickListener(this);
 
         // [START initialize_auth]
         mAuth = FirebaseAuth.getInstance();
@@ -213,7 +214,7 @@ public class PhoneAuthActivity extends AppCompatActivity implements
     }
 
     private void verifyPhoneNumberWithCode(String verificationId, String code) {
-         // [START verify_with_code]
+        // [START verify_with_code]
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationId, code);
         // [END verify_with_code]
         signInWithPhoneAuthCredential(credential);
@@ -354,6 +355,9 @@ public class PhoneAuthActivity extends AppCompatActivity implements
             mDetailText.setText(getString(R.string.firebase_status_fmt, user.getUid()));
 
             //CREATE A NEW INTENT HERE AND MAKE LOGOUT BUTTON IN CHAT ROOM
+            Intent intent = new Intent(PhoneAuthActivity.this,MainActivity.class);
+            startActivity(intent);
+
         }
     }
 

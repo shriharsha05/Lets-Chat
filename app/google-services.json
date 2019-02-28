@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "398613069511-ovlfjplcil1bvdv4irp1o5fah3c4i73j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "freak.i.letschat",
+            "certificate_hash": "a44514e230348f65e779224116abd1f1612c7e6c"
+          }
+        },
+        {
           "client_id": "398613069511-4cv01r1kr4m6sueu8karmh0if2jtche3.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
